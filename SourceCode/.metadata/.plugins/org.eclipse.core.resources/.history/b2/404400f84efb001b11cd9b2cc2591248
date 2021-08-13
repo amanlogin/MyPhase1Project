@@ -1,0 +1,12 @@
+package com.lockedme;
+
+public class LockedMeProject 
+{
+	static final String folderpath = "D:\\MyPhase1Project\\LockedMeFiles"; 
+	public static void main(String[] args) 
+	
+	{
+		
+	}
+
+}

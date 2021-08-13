@@ -1,0 +1,29 @@
+package com.lockedme;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LockedMeProject 
+{
+	static final String folderpath = "D:\\MyPhase1Project\\LockedMeFiles"; 
+	public static void main(String[] args) 
+	
+	{
+		//Code to delete the file
+		
+		String fileName;
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter file name to delete:");
+		fileName=obj.nextLine();
+		
+		boolean isDeleted = FileManager.deleteFile(folderpath, fileName);
+		
+		if(isDeleted)
+			System.out.println("File deleted sucessfully");
+		else
+			System.out.println("File not present! Enter correct file name.");
+		
+	}
+
+}
